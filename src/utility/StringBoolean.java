@@ -46,4 +46,20 @@ public class StringBoolean {
 		return output;
 	}
 
+	// Concatenate two string
+
+	public String concatenateString(String s1, String s2) {
+		return s1.concat(s2);
+	}
+
+	// split the string
+
+	public String splitString(String s1, String s2) {
+		String[] strings = s1.split(s2);
+		return strings.toString();
+	}
+
+	public String indexOfChar(String s, String s1) {
+		return String.valueOf(s.indexOf(s1));
+	}
 }
