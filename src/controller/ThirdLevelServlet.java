@@ -29,8 +29,8 @@ public class ThirdLevelServlet extends HttpServlet {
 		String seeAnswer = request.getParameter("seeanswer");
 		String end = request.getParameter("end");
 
-		stringadvance.setInput1(input1);
-		stringadvance.setInput2(input2);
+		stringadvance.setInput_1(input1);
+		stringadvance.setInput_2(input2);
 
 		if (seeAnswer != null) {
 			if (concatenation != null) {
