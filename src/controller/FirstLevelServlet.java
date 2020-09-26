@@ -35,9 +35,7 @@ public class FirstLevelServlet extends HttpServlet {
 		String secondLevel = request.getParameter("secondlevel");
 		String level = request.getParameter("level");
 		String choose = request.getParameter("choose");
-
-		string.setInput(input);
-		
+		StringMethod string = new StringMethod();
 		if (level != null)
 		{
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level.html");
