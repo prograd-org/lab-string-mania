@@ -10,32 +10,32 @@ public class StringMethod
 	public String getInput() {
 		return string;
 	}
-	public void SetInput(String string) {
+	public void setInput(String string) {
 		this.string = string;
 	}
-	public String toLowerCase(String string) {
+	public String lower(String string) {
 		
 		
 		return string.toLowerCase();
 		
 	}
-	public String toUpperCase(String string) {
+	public String upper(String string) {
 		
 		
 		return string.toUpperCase();
 			
 		}
 	
-	public String firstChar(String string) {
+	public String firstCharacter(String string) {
 		
 		return String.valueOf(string.charAt(0));
 		
 	}
-	public String stringLength(String string) {
+	public String length(String string) {
 		return String.valueOf(string.length());
 		
 	}
-	public String trimString(String string) {
+	public String trim(String string) {
 		
 		return string.trim();
 		
