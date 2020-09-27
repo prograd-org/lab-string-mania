@@ -11,11 +11,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import utility.StringAdvanceMethod;
+import utility.StringMethod;
 
 @WebServlet(urlPatterns = { "/thirdlevel" })
 public class ThirdLevelServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
 	StringAdvanceMethod stringadvance = new StringAdvanceMethod();
+	
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -30,7 +33,8 @@ public class ThirdLevelServlet extends HttpServlet {
 		String end = request.getParameter("end");
 
 		stringadvance.setInput1(input1);
-		stringadvance.setInput2(input2);
+		stringadvance.setInput1(input2);
+
 
 		if (seeAnswer != null) {
 			if (concatenation != null) {
