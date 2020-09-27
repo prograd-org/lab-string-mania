@@ -29,7 +29,7 @@ public class SecondLevelServlet extends HttpServlet {
 		String seeAnswer = request.getParameter("seeAnswer");
 		String thirdLevel = request.getParameter("thirdlevel");
 
-		System.out.println(seeAnswer);
+		//System.out.println(seeAnswer);
 
 		stringboolean.setInput1(input1);
 		stringboolean.setInput2(input2);

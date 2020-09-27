@@ -51,24 +51,24 @@ public class FirstLevelServlet extends HttpServlet {
 
 		if (seeAnswer != null) {
 			if (lowerCase != null) {
-				String output = string.lower(input);
+				String output = string.lowercase(input);
 				// System.out.println(output);
 				request.setAttribute("output", output);
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level1.jsp");
 				rd.forward(request, response);
 			}
 			/*
-			 * else { input = null; String output = string.lower(input);
-			 * //System.out.println(output); request.setAttribute("output", output);
-			 * RequestDispatcher rd=this.getServletContext().getRequestDispatcher(
-			 * "/WEB-INF/views/firstlevel.jsp"); rd.forward(request, response); }
+			  else { input = null; String output = string.lowercase(input);
+			  //System.out.println(output); request.setAttribute("output", output);
+			  RequestDispatcher rd=this.getServletContext().getRequestDispatcher(
+			  "/WEB-INF/views/firstlevel.jsp"); rd.forward(request, response); }
 			 */
 
 		}
 
 		if (seeAnswer != null) {
 			if (upperCase != null) {
-				String output = string.upper(input);
+				String output = string.uppercase(input);
 				request.setAttribute("output", output);
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level1.jsp");
 				rd.forward(request, response);
