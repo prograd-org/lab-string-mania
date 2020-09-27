@@ -22,12 +22,12 @@ public class TestStringMethod {
 
 	@Test
 	public void testLowerMethod() {
-		assertEquals("hai", sm.lower("HaI"));
-		assertEquals("1234", sm.lower("1234"));
-		assertEquals("hai&hello", sm.lower("hai&HELLO"));
-		assertEquals("welcome", sm.lower("welcome"));
+		assertEquals("hai", sm.lowercase("HaI"));
+		assertEquals("1234", sm.lowercase("1234"));
+		assertEquals("hai&hello", sm.lowercase("hai&HELLO"));
+		assertEquals("welcome", sm.lowercase("welcome"));
 		try {
-			sm.lower("");
+			sm.lowercase("");
 		} catch (IllegalArgumentException e) {
 			// System.out.println("No input is given");
 			e.printStackTrace();
@@ -36,12 +36,12 @@ public class TestStringMethod {
 
 	@Test
 	public void testUpperMethod() {
-		assertEquals("HAI", sm.upper("HAI"));
-		assertEquals("1234", sm.upper("1234"));
-		assertEquals("HAI&HELLO", sm.upper("hai&HELLO"));
-		assertEquals("WELCOME", sm.upper("welcome"));
+		assertEquals("HAI", sm.uppercase("HAI"));
+		assertEquals("1234", sm.uppercase("1234"));
+		assertEquals("HAI&HELLO", sm.uppercase("hai&HELLO"));
+		assertEquals("WELCOME", sm.uppercase("welcome"));
 		try {
-			sm.upper("");
+			sm.uppercase("");
 		} catch (IllegalArgumentException e) {
 			// System.out.println("No input is given");
 			e.printStackTrace();

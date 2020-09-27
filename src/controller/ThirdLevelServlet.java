@@ -25,17 +25,23 @@ public class ThirdLevelServlet extends HttpServlet {
 		String input2 = request.getParameter("input2");
 		String concatenation = request.getParameter("concatenation");
 		String split = request.getParameter("split");
-		String indexOf = request.getParameter("indexOf");
+		String indexOf = request.getParameter("indexof");
 		String seeAnswer = request.getParameter("seeanswer");
 		String end = request.getParameter("end");
-
+		
+		//System.out.println(input1);
+		//System.out.println(input2);
+		
+		//System.out.println(seeAnswer);
+		//System.out.println(indexOf);
+		
 		stringadvance.setInput1(input1);
 		stringadvance.setInput2(input2);
 
 		if (seeAnswer != null) {
 			if (concatenation != null) {
 				String output = stringadvance.concat(input1, input2);
-				// System.out.println(output);
+				//System.out.println(output);
 				request.setAttribute("output", output);
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level3.jsp");
 				rd.forward(request, response);
