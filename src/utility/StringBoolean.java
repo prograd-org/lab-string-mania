@@ -45,5 +45,13 @@ public class StringBoolean {
 		boolean output = input1.equalsIgnoreCase(input2);
 		return output;
 	}
+	
+	
+	
+	
+	
+	
+		
+	
 
 }
