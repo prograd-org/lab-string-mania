@@ -11,10 +11,10 @@ public class TestStringMethod {
 
 	@Test
 	public void testSetInputsMethod() {
-		sm.setInput("Java");
-		assertEquals("Java", sm.getInput());
+		sm.setStr("Java");
+		assertEquals("Java", sm.getStr());
 		try {
-			sm.setInput(null);
+			sm.setStr(null);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -22,12 +22,12 @@ public class TestStringMethod {
 
 	@Test
 	public void testLowerMethod() {
-		assertEquals("hai", sm.lower("HaI"));
-		assertEquals("1234", sm.lower("1234"));
-		assertEquals("hai&hello", sm.lower("hai&HELLO"));
-		assertEquals("welcome", sm.lower("welcome"));
+		assertEquals("hai", sm.ToLower("HaI"));
+		assertEquals("1234", sm.ToLower("1234"));
+		assertEquals("hai&hello", sm.ToLower("hai&HELLO"));
+		assertEquals("welcome", sm.ToLower("welcome"));
 		try {
-			sm.lower("");
+			sm.ToLower("");
 		} catch (IllegalArgumentException e) {
 			// System.out.println("No input is given");
 			e.printStackTrace();
@@ -36,12 +36,12 @@ public class TestStringMethod {
 
 	@Test
 	public void testUpperMethod() {
-		assertEquals("HAI", sm.upper("HAI"));
-		assertEquals("1234", sm.upper("1234"));
-		assertEquals("HAI&HELLO", sm.upper("hai&HELLO"));
-		assertEquals("WELCOME", sm.upper("welcome"));
+		assertEquals("HAI", sm.ToUpper("HAI"));
+		assertEquals("1234", sm.ToUpper("1234"));
+		assertEquals("HAI&HELLO", sm.ToUpper("hai&HELLO"));
+		assertEquals("WELCOME", sm.ToUpper("welcome"));
 		try {
-			sm.upper("");
+			sm.ToUpper("");
 		} catch (IllegalArgumentException e) {
 			// System.out.println("No input is given");
 			e.printStackTrace();
@@ -50,12 +50,12 @@ public class TestStringMethod {
 
 	@Test
 	public void testFirstCharacterMethod() {
-		assertEquals("1", sm.firstCharacter("1.hai"));
-		assertEquals("@", sm.firstCharacter("@hai"));
-		assertEquals(" ", sm.firstCharacter(" hai"));
-		assertEquals("h", sm.firstCharacter("hai"));
+		assertEquals("1", sm.FirstCharacter("1.hai"));
+		assertEquals("@", sm.FirstCharacter("@hai"));
+		assertEquals(" ", sm.FirstCharacter(" hai"));
+		assertEquals("h", sm.FirstCharacter("hai"));
 		try {
-			sm.firstCharacter(" ");
+			sm.FirstCharacter(" ");
 		} catch (IllegalArgumentException e) {
 			// System.out.println("No input is given");
 			e.printStackTrace();
@@ -64,12 +64,12 @@ public class TestStringMethod {
 
 	@Test
 	public void testLengthMethod() {
-		assertEquals("0", sm.length(""));
-		assertEquals("15", sm.length(" WelcomeToJava "));
-		assertEquals("4", sm.length("123 "));
-		assertEquals("1", sm.length("."));
+		assertEquals("0", sm.StringLength(""));
+		assertEquals("15", sm.StringLength(" WelcomeToJava "));
+		assertEquals("4", sm.StringLength("123 "));
+		assertEquals("1", sm.StringLength("."));
 		try {
-			sm.length("");
+			sm.StringLength("");
 		} catch (IllegalArgumentException e) {
 			// System.out.println("No input is given");
 			e.printStackTrace();
@@ -78,11 +78,11 @@ public class TestStringMethod {
 
 	@Test
 	public void testTrimMethod() {
-		assertEquals("Java", sm.trim(" Java "));
-		assertEquals("Ja va", sm.trim("Ja va "));
-		assertEquals("Java", sm.trim("  Java  "));
+		assertEquals("Java", sm.Trim(" Java "));
+		assertEquals("Ja va", sm.Trim("Ja va "));
+		assertEquals("Java", sm.Trim("  Java  "));
 		try {
-			sm.trim("");
+			sm.Trim("");
 		} catch (IllegalArgumentException e) {
 			// System.out.println("No input is given");
 			e.printStackTrace();

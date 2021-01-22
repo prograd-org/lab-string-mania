@@ -21,29 +21,40 @@ public class StringBoolean {
 	}
 
 	public boolean contains(String input1, String input2) {
+		if (input1.length() == 0 || input2.length()==0)
+			return false;
 		boolean output = input1.contains(input2);
 		System.out.println(output);
 		return output;
 	}
 
 	public boolean endsWith(String input1, String input2) {
+		if (input1.length() == 0 || input2.length()==0)
+			return false;
 		boolean output = input1.endsWith(input2);
 		return output;
 	}
 
 	public boolean startsWith(String input1, String input2) {
+		if (input1.length() == 0 || input2.length()==0)
+			return false;
 		boolean output = input1.startsWith(input2);
 		return output;
 	}
 
 	public boolean equals(String input1, String input2) {
+		if (input1.length() == 0 || input2.length()==0)
+			return false;
 		boolean output = input1.equals(input2);
 		return output;
 	}
 
 	public boolean equalsIgnoreCase(String input1, String input2) {
+		if (input1.length() == 0 || input2.length()==0)
+			return false;
 		boolean output = input1.equalsIgnoreCase(input2);
 		return output;
 	}
 
+	
 }

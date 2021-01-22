@@ -1,6 +1,6 @@
 package testing;
 
-/* Uncomment the below code to test your application
+// Uncomment the below code to test your application
 
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -12,13 +12,13 @@ public class TestStringAdvanceMethod {
 
 	@Test
 	public void testSetInputsMethod() {
-		sam.setInput1("Java");
-		sam.setInput2("Program");
-		assertEquals("Java", sam.getInput1());
-		assertEquals("Program", sam.getInput2());
+		sam.setStr1("Java");
+		sam.setStr2("Program");
+		assertEquals("Java", sam.getStr1());
+		assertEquals("Program", sam.getStr2());
 		try {
-			sam.setInput1(null);
-			sam.setInput2(null);
+			sam.setStr1(null);
+			sam.setStr2(null);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -26,13 +26,13 @@ public class TestStringAdvanceMethod {
 
 	@Test
 	public void testConcatMethod() {
-		assertEquals("JavaProgram", sam.concat("Java", "Program"));
-		assertEquals("Java@Program", sam.concat("Java@", "Program"));
-		assertEquals("Java  Program", sam.concat("Java ", " Program"));
+		assertEquals("JavaProgram", sam.Concatenate("Java", "Program"));
+		assertEquals("Java@Program", sam.Concatenate("Java@", "Program"));
+		assertEquals("Java  Program", sam.Concatenate("Java ", " Program"));
 		try {
-			sam.concat(null, null);
-			sam.concat("Java", null);
-			sam.concat(null, "Java");
+			sam.Concatenate(null, null);
+			sam.Concatenate("Java", null);
+			sam.Concatenate(null, "Java");
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
@@ -40,10 +40,10 @@ public class TestStringAdvanceMethod {
 
 	@Test
 	public void testSplitMethod() {
-		assertEquals("Java  rogram", sam.split("Javaprogram", "p"));
-		assertEquals("Ja  a@", sam.split("Java@", "v"));
+		assertEquals("Java  rogram", sam.Split("Javaprogram", "p"));
+		assertEquals("Ja  a@", sam.Split("Java@", "v"));
 		try {
-			sam.split("Java", "");
+			sam.Split("Java", "");
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
@@ -51,16 +51,16 @@ public class TestStringAdvanceMethod {
 
 	@Test
 	public void testIndexOfMethod() {
-		assertEquals("4", sam.indexOf("Javaprogram", "p"));
-		assertEquals("1", sam.indexOf("Java@", "a"));
-		assertEquals("4", sam.indexOf("Java ", " "));
+		assertEquals("4", sam.IndexOf("Javaprogram", "p"));
+		assertEquals("1", sam.IndexOf("Java@", "a"));
+		assertEquals("4", sam.IndexOf("Java ", " "));
 		try {
-			sam.indexOf("", "");
-			sam.indexOf("Java", "");
-			sam.indexOf("", "Java");
+			sam.IndexOf("", "");
+			sam.IndexOf("Java", "");
+			sam.IndexOf("", "Java");
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
 	}
 }
-*/
+
