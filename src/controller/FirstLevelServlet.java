@@ -57,11 +57,14 @@ public class FirstLevelServlet extends HttpServlet {
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level1.jsp");
 				rd.forward(request, response);
 			}
-			/*
-			 * else { input = null; String output = string.lower(input);
-			 * //System.out.println(output); request.setAttribute("output", output);
-			 * RequestDispatcher rd=this.getServletContext().getRequestDispatcher(
-			 * "/WEB-INF/views/firstlevel.jsp"); rd.forward(request, response); }
+			
+			 /* else { 
+			 //input = null; 
+			  String output = string.lower(input);
+			  System.out.println(output); 
+			  request.setAttribute("output", output);
+			  RequestDispatcher rd=this.getServletContext().getRequestDispatcher(
+			  "/WEB-INF/views/firstlevel.jsp"); rd.forward(request, response); }
 			 */
 
 		}
