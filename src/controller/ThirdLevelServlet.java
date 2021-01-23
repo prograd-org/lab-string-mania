@@ -25,7 +25,7 @@ public class ThirdLevelServlet extends HttpServlet {
 		String input2 = request.getParameter("input2");
 		String concatenation = request.getParameter("concatenation");
 		String split = request.getParameter("split");
-		String indexOf = request.getParameter("indexOf");
+		String indexOf = request.getParameter("indexof");
 		String seeAnswer = request.getParameter("seeanswer");
 		String end = request.getParameter("end");
 

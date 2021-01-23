@@ -17,9 +17,9 @@
             <label id="lable2">Enter another string of your choice</label><br><br>
             <input type="text" id="name" placeholder="Enter any sentence"  name="input2">
             <p>Choose an operation you'd like to perform on your string</p><br>
-            <input type="checkbox" name="concatenation" > CONCATENATE &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
-            <input type="checkbox" name="split"> SPLIT &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
-            <input type="checkbox" name="indexof"> INDEXOF 
+            <input type="checkbox" name="concatenation" > CONCATENATE &nbsp &nbsp &nbsp;
+            <input type="checkbox" name="split"> SPLIT &nbsp &nbsp &nbsp;
+            <input type="checkbox" name="indexof"> INDEXOF &nbsp  &nbsp &nbsp;<br>
             <br> <input type="submit" name="seeanswer" id="sa"
 				value="See Answer"><br>
 			 <input type="text" class="form-text" id="string"
