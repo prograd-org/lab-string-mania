@@ -9,7 +9,7 @@
 </head>
 <body>
 
- <img src="./asset/Clouds.png" alt="cloud" class="cloud" srcset="">
+ <img src="./asset/Clouds.png" alt="cloud" class="cloud">
    <img src="./asset/Group 10.svg" id="top">
    <form action="/WebApp_Strings/firstlevel" method="post" >
    <button class="btn" id="level8" name="level">Pay Card</button>
